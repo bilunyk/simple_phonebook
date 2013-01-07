@@ -51,7 +51,6 @@ define([
             var $elements = $(".control-group");
             $elements.each(function(){
                 var $element = $(this);
-                console.log($element);
                 $element.removeClass("error");
                 $(".help-inline", $element).text('');
             });
