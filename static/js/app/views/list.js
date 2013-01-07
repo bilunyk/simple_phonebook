@@ -49,7 +49,6 @@ define([
 
         unhighlightErrors: function(){
             var $elements = $(".control-group");
-            console.log($elements);
             $elements.each(function(){
                 var $element = $(this);
                 console.log($element);
