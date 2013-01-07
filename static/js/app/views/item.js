@@ -56,7 +56,6 @@ define([
         },
 
         errorHandler: function(model, errors){
-            console.log(errors);
             _.each(errors, function(error_text, error_field){
                 // highlight all errors
                 var $error_el = $("#"+error_field);
