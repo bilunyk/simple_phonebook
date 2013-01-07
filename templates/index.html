@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div id="phonebookapp">
+        <header id="header">
+            <h2>Phone Book</h2>
+            <br>
+            <h3>Add new contact?</h3>
+            <form class="form-horizontal">
+                <div class="control-group" id="first_name">
+                    <label class="control-label">First name</label>
+                    <div class="controls">
+                        <input type="text" id="fname" class="contact-input">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+                <div class="control-group" id="last_name">
+                    <label class="control-label">Last name</label>
+                    <div class="controls">
+                        <input type="text" id="lname" class="contact-input">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+                <div class="control-group" id="phone_number">
+                    <label class="control-label">Phone number</label>
+                    <div class="controls">
+                        <input type="text" id="pnumber" class="contact-input">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button class="btn btn-medium btn-primary" type="button" id="add-contact">Add contact</button>
+                    </div>
+                </div>
+            </form>
+        </header>
+        <div id="main">
+            <br>
+            <div class="contact-title"><h3>List of contacts</h3></div>
+            <ul id="contact-list" class="unstyled"></ul>
+            <div class="contact-errors"></div>
+        </div>
+    </div>
+{% endblock %}
